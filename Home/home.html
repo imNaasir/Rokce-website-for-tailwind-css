@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hme</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-thin-rounded/css/uicons-thin-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-straight/css/uicons-regular-straight.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="../style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            ourexprience: {
+              screens: {
+                sm: "600px",
+                md: "728px",
+                lg: "984px",
+                xl: "1240px",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      @media screen and (max-width: 1060px) {
+        .pinters {
+          display: none;
+        }
+      }
+
+      #check:checked ~ ul {
+        left: 0%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="bg-[#222328] h-20 w-full fixed z-50">
+      <input type="checkbox" id="check" hidden />
+      <label
+        for="check"
+        class="float-right text-[#F58259] text-3xl leading-[80px] mr-10 lg:hidden"
+        ><i class="bx bx-menu"></i
+      ></label>
+      <label
+        class="text-white leading-[80px] md:leading-[68px] pl-12 md:pl-10 md:text-4xl text-3xl"
+      >
+        <img src="./image/logo-white.png" class="w-[180px] inline" alt="" />
+      </label>
+      <ul
+        class="float-right lg:float-left lg:ml-[25em] mr-10 lg:flex leading-[80px] space-x-4 lg:space-x-8 text-[17px] text-white capitalize rounded fixed lg:relative h-[100vh] lg:h-0 w-[100%] lg:w-fit top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center bg-slate-950 z-50"
+      >
+        <li>
+          <a
+            href=""
+            class="hover:text-[#F58259] transition-all ease-linear duration-500"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="hover:text-[#F58259] transition-all ease-linear duration-500"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="hover:text-[#F58259] transition-all ease-linear duration-500"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="hover:text-[#F58259] transition-all ease-linear duration-500"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- section1 -->
+    <section
+      class="bg-[#0A4C48] w-full h-[135vh] box-border overflow-hidden bg-no-repeat bg-left-bottom bg-contain"
+      style="background-image: url('./image/hero-shape-2.png')"
+    >
+      <div class="container px-20 pt-[20%] -z-0 flex">
+
+        <!-- Left text -->
+        <div
+          class="w-[360px]  mt-[15%] lg:mt-[0%] 
+          -ml-[65px] lg:-ml-[0px]">
+        
+          <div class="flex items-center gap-4 font-[Hind] font-bold">
+            <div class="bg-[#FAD105] w-[6%] h-1 rounded"></div>
+            <div class="text-[#FAD105]">25 Years Of Exprience</div>
+          </div>
+          <div>
+            <h1
+              class="text-white font-[Rubik - 500] lg:text-[6rem] text-[5rem] font-bold leading-[100px]"
+            >
+              Painting Service Agency
+            </h1>
+          </div>
+          <div class="flex pt-12 gap-3 flex-wrap">
+            <button
+              class="bg-[#FAD105] px-5 py-4 rounded-lg uppercase gap-4 hover:bg-[#222328] hover:text-white transition-all duration-500"
+            >
+              get started <i class="bx bx-right-arrow-alt"></i>
+            </button>
+            <button
+              class="border border-solid border-[#5B8D8A] text-[#5B8D8A] px-5 py-3 rounded-lg uppercase gap-4 hover:text-white hover:bg-[#222328] hover:border-none transition-all duration-500"
+            >
+              our Services<i class="bx bx-right-arrow-alt"></i>
+            </button>
+          </div>
+        </div>
+        <div class="ml-36 hidden lg:block">
+          <div
+            class="bg-[#FAD105] w-[550px] h-[550px] -mt-80 rounded-full"
+          ></div>
+          <div class="-mt-[25em] ml-l20">
+            <img src="./image/hero-1.png" alt="" class="w-[450px]" />
+          </div>
+          <div class="-mt-[13em] absolute right-8 -z-0">
+            <img
+              src="./image/hero-2.jpg"
+              alt=""
+              class="w-[250px] shadow-[10px_10px_0px_0px_#FAD105] -rotate-[20deg]"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- section2 -->
+    <section class="flex flex-col w-full lg:flex-row px-4">
+      <div class="mt-[10%]  w-full lg:w-1/2 flex flex-col  px-4">
+        <div class="flex items-center gap-4 font-[Hind] font-bold">
+          <div class="bg-[#F58259] w-[6%] h-1 rounded"></div>
+          <div class="text-[#F58259] text-[25px] font-['Hind']">
+            Core Features
+          </div>
+        </div>
+        <div>
+          <h1
+            class="text-black font-['Rubik', sans-serif] lg:text-[40px] font-bold leading-tight"
+          >
+            Explore About Our Core Features
+          </h1>
+        </div>
+        <div>
+          <p class="border-l-[3px] border-l-[#FAD105] pr-[20px] pl-[30px] mt-5">
+            Sed ut perspiciais unde omnis iste natus error sit voluptat
+            accusantium dolore lautium totam rem aperiam eaque ques abillo
+            inventore veritatis et quasi architeo beate vita dicta sunt
+            explicaboemo enim ipsam voluptatem
+          </p>
+        </div>
+        <div class="py-5">
+          <div class="flex items-center gap-5 py-2">
+            <label
+              class="border border-solid px-4 py-4 rounded-full flex items-center justify-center hover:bg-[#0A4C48] hover:text-white transition-all duration-300"
+            >
+              <i class="bx bx-check"></i
+            ></label>
+            <p>
+              Dolore lautium totam rem aperiam eaque ques abillo inventore
+              veritatis et quasi architeo beate vita
+            </p>
+          </div>
+          <div class="flex items-center gap-3 py-2">
+            <label
+              class="border border-solid px-4 py-4 rounded-full flex items-center justify-center hover:bg-[#0A4C48] hover:text-white transition-all duration-300"
+            >
+              <i
+                class="bx bx-check"
+                class="flex items-center justify-center"
+              ></i
+            ></label>
+            <p>
+              Dolore lautium totam rem aperiam eaque ques abillo inventore
+              veritatis et quasi architeo beate vita
+            </p>
+          </div>
+          <div class="py-8">
+            <button
+              class="border border-solid w-36 rounded-lg py-4 transition-all duration-300 hover:bg-[#222328] hover:text-white font-[500]"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- right Box -->
+      <div class="w-full mt-[10%] lg:w-1/2  relative -z-20 flex flex-wrap lg:h-[110vh] h-[85vh] overflow-visible">
+      
+        <!-- Box1 -->
+        <div class="bg-[#FAD105] w-[35%] h-auto absolute right-0 hidden  lg:block">
+          <div class="flex flex-col items-center justify-center py-8 px-8">
+            <div class="mx-auto text-center">
+              <img
+                src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/fea-1.png
+                        "
+                alt=""
+                class="w-[80px] bg-white p-5 rounded-full"
+              />
+            </div>
+            <div>
+              <h3
+                class="text-[30px] text-center font-[500] leading-10 text-[#2C3941]"
+              >
+                Commercial Painting
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="bg-[#0A4C48] inline-block  lg:w-[35%] w-1/2  h-auto absolute lg:right-[16em]  lg:top-[8em] right-0 top-0 ">
+          <div class="flex flex-col items-center justify-center py-8 px-8">
+            <div class="mx-auto text-center">
+              <img
+                src="	https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/fea-2.png"
+                alt=""
+                class="w-[80px] bg-white p-5 rounded-full"
+              />
+            </div>
+            <div>
+              <h3
+                class="text-[30px] text-center font-[500] leading-10 text-white"
+              >
+                Industrial Painting
+              </h3>
+            </div>
+          </div>
+        </div>
+        <!-- Boc 3 -->
+        <div class="bg-[#253597]  lg:w-[35%] w-1/2 h-auto absolute lg:right-[27em] right-[13rem] lg:top-[24em] top-[16em]  ">
+          <div class="flex flex-col items-center justify-center py-8 px-8">
+            <div class="mx-auto text-center">
+              <img
+                src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/fea-3-1.png
+                        "
+                alt=""
+                class="w-[80px] bg-white p-5 rounded-full"
+              />
+            </div>
+            <div>
+              <h3
+                class="text-[30px] text-center font-[500] leading-10 text-white"
+              >
+                Residential Painting
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- video  -->
+        <div class="relative ml-[20em] mt-[24em]  h-[248px] overflow-hidden hidden lg:block">
+          <div>
+            <img
+              src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/about-img-1-1.jpg"
+              alt=""
+            />
+            <div
+              class="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] w-[50px] h-[50px] bg-white rounded-full cursor-pointer flex justify-center content-center items-center cursor-pointer"
+            >
+              <a href="" class="text-[30px]"
+                ><i class="bx bx-play cursor-pointer"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- sectiom 3 -->
+    <section class="lg:flex lg:flex-row flex-col w-full gap-[1%]">
+      <div class="mt-[10%] w-full lg:ml-[5%] lg:w-[44.5%]">
+        <img src="./image/about-img-2.jpg" alt="" />
+      </div>
+
+      <!-- right text -->
+      <div class="mt-[10%] w-full  mr-[5%] lg:w-[44.5%] h-auto px-4">
+        <div class="flex items-center gap-4 font-[Hind] font-bold">
+          <div class="bg-[#F58259] w-[6%] h-1 rounded"></div>
+          <div class="text-[#F58259] text-[25px] font-['Hind']">
+            Core Features
+          </div>
+        </div>
+        <div>
+          <h1
+            class="text-[#2C3941] font-['Rubik', sans-serif] lg:text-[40px] lg:w-[400px] font-bold leading-tight"
+          >
+            Better Painting Solution Company
+          </h1>
+        </div>
+        <div>
+          <p class="pr-[70px] mt-5 text-[#677A85]">
+            Sed ut perspicis unde omnis iste natus error sit volaccu sante
+            dolore lautium totam rem aperiam eaque ques abillo inventore
+            veritatis et quasi architeo beate vita dicta sunte
+          </p>
+        </div>
+        <!-- Box1 -->
+        <div class="pt-[10%] lg:flex lg:flex-row gap-5 -z-20">
+          <div class="w-full lg:w-[45%] h-auto bg-white shadow-2xl py-8 my-4">
+            <div class="flex flex-col justify-center items-center px-20 leading-[100px]">
+              <div class="text-[#0A4C48] text-[80px]">
+                <i class="bx bxs-spray-can"></i>
+              </div>
+              <div>
+                <h3 class="text-center text-4xl font-[500]">
+                  Professional Painting
+                </h3>
+                <p
+                  class="text-center text-2xl font-[400] text-[#677A85] text-[15px] pt-[10px]"
+                >
+                  Sed ut perspicis unde omnis iste natus error sit volaccu
+                  sadolore
+                </p>
+                <div class="flex justify-center text-4xl text-[#677A85]">
+                  <i class="bx bx-right-arrow-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Boxn2 -->
+          <div class="w-full lg:w-[45%] h-96 bg-white shadow-2xl py-8 my-4">
+            <div
+              class="flex flex-col justify-center items-center px-20 leading-[100px]"
+            >
+              <div class="text-[#0A4C48] text-[80px]">
+                <i class="bx bxs-spray-can"></i>
+              </div>
+              <div>
+                <h3 class="text-center text-4xl font-[500]">
+                  Professional Painting
+                </h3>
+                <p
+                  class="text-center text-2xl font-[400] text-[#677A85] text-[15px] pt-[10px]"
+                >
+                  Sed ut perspicis unde omnis iste natus error sit volaccu
+                  sadolore
+                </p>
+                <div class="flex justify-center text-4xl text-[#677A85]">
+                  <i class="bx bx-right-arrow-alt"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-20">
+      <div class="bg-[#175550] w-full h-screen ">
+        <div class="text-center pt-36">
+          <div class="flex items-center justify-center gap-4 font-[Hind] font-bold ">
+            <div class="bg-white w-[7%] lg:w-[4%]  h-1 rounded"></div>
+            <div class="text-white text-2xl">What We Offer</div>
+            <div class="bg-white w-[7%] lg:w-[4%]  h-1 rounded"></div>
+          </div>
+          <div>
+            <h1
+              class="text-white font-[Rubik - 500] lg:text-[3rem] text-[2rem] font-bold lg:w-[700px] lg:m-auto "
+            >
+            We Help You For Made Your
+            Dream Painting
+            </h1>
+          </div>
+        </div>
+
+      </div>
+      <div class="services  flex flex-wrap items-center justify-center max-md:gap-4 -mt-[17.8rem] " >
+        <div class="servicess w-full  relative lg:w-[32%] md:w-[49%]">
+          <img class="w-full  px-4 -z-50" src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/services-1-2.jpg" alt="">
+          <div class="icon bg-[#FC8459] py-5 px-6 absolute inline-block left-1/2 -translate-x-1/2 rounded-md
+            top-[53%] lg:top-[50%]  text-white z-40 transition-all duration-300">
+            <i class="fi fi-tr-paint-roller"></i>
+          </div>
+          <div class="bg-white shadow-xl w-[90%]  relative -mt-3 lg:-mt-8 left-1/2 -translate-x-1/2 px-14 z-30">
+            <div class="text-center pt-12 pb-5 leading-[3rem] lg:w-[280px]">
+              <h2 class="text-2xl font-bold transition duration-300 hover:text-[#24C373]">Residential Interior</h2>
+              <p class="text-center leading-normal pt-2">Sed ut perspiciatis unde omnis iste natus error sit volupt ateaccu</p>
+              <div class="flex items-center justify-center font-bold cursor-pointer">READ ME <i class='bx bx-right-arrow-alt'></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="servicess w-full  relative lg:w-[32%] md:w-[49%]">
+          <img class="w-full  px-4 -z-50" src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/services-2.jpg" alt="">
+          <div class="icon bg-[#FC8459] py-5 px-6 absolute left-1/2 -translate-x-1/2 rounded-md
+            top-[53%] lg:top-[50%]  text-white z-40 transition-all duration-300">
+            <i class="fi fi-tr-paint-roller"></i>
+          </div>
+          <div class="bg-white shadow-xl w-[90%]  relative -mt-3 lg:-mt-8 left-1/2 -translate-x-1/2 px-14 z-30">
+            <div class="text-center pt-12 pb-5 leading-[3rem] lg:w-[280px]">
+              <h2 class="text-2xl font-bold transition duration-300 hover:text-[#24C373]">Commercial Interior</h2>
+              <p class="text-center leading-normal pt-2">Sed ut perspiciatis unde omnis iste natus error sit volupt ateaccu</p>
+              <div class="flex items-center justify-center font-bold cursor-pointer">READ ME <i class='bx bx-right-arrow-alt'></i></div>
+            </div>
+          </div>
+        </div>
+        <div class="servicess w-full  relative lg:w-[32%] md:w-[49%]">
+          <img class="w-full  px-4 -z-50" src="	https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/services-3.jpg" alt="">
+          <div class="icon bg-[#FC8459] py-5 px-6 absolute left-1/2 -translate-x-1/2 rounded-md
+            top-[53%] lg:top-[50%]  text-white z-40 transition-all duration-300">
+            <i class="fi fi-tr-paint-roller"></i>
+          </div>
+          <div class="bg-white shadow-xl w-[90%]  relative -mt-3 lg:-mt-8 left-1/2 -translate-x-1/2 px-14 z-30">
+            <div class="text-center pt-12 pb-5 leading-[3rem] lg:w-[280px]">
+              <h2 class="text-2xl font-bold transition duration-300 hover:text-[#24C373]">Industrial Interior</h2>
+              <p class="text-center leading-normal pt-2">Sed ut perspiciatis unde omnis iste natus error sit volupt ateaccu</p>
+              <div class="flex items-center justify-center font-bold cursor-pointer">READ ME <i class='bx bx-right-arrow-alt'></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="mt-4 px-5">
+      <div class="flex flex-col lg:flex-row my-40 gap-8 items-center">
+        <div class=" w-full lg:w-1/2">        
+          <img class="w-full" src="	https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/faq-1.png" alt="">
+        </div>
+        <div class="w-full lg:w-[45%]">
+          <div class="flex items-center gap-3">
+            <div class="bg-[#FC8459] w-[10%] lg:w-[4%]  h-[0.20rem] rounded"></div>
+            <span class="font-bold text-[#FC8459]">Faq</span>
+          </div>
+          <div class="text-[30px] font-[Rubik - 500] font-[500]"><h2>Frequently Asked Questions</h2></div>
+          <div class="my-4 flex flex-col gap-2">
+            <div class="border border-[#DADADA] p-4">
+              <input type="checkbox" id="Data" hidden>
+              <label for="Data" class="flex items-center gap-3">
+                <div class="text-2xl font-bold"><i class='bx bx-plus'></i></div>                <span class="font-bold text-black cursor-pointer">
+                  Data Visualization Improve Mobile Web ?</span>
+              </label>
+              <p class="pl-10 pt-2 opacity-60 hidden ">Sed perspiciais unde omnis iste natus error voluptat accusantium dolore
+                 lautium totam rem aperiam eaque abillo inventore veritatis et quasi architeo beate
+                 vita dicta sunt explicaboemo enim ipsam voluptatem</p>
+            </div>
+            <div class="border border-[#DADADA] p-4">
+              <input type="checkbox" id="How" hidden>
+              <label for="How" class="flex items-center gap-3">
+                <div class="text-2xl font-bold"><i class='bx bx-plus'></i></div>                <span class="font-bold text-black cursor-pointer capitalize">
+                  How To Create A Mobile app in expo ?</span>
+              </label>
+              <p class="pl-10 pt-2 opacity-60 hidden ">Sed perspiciais unde omnis iste natus error voluptat accusantium dolore
+                 lautium totam rem aperiam eaque abillo inventore veritatis et quasi architeo beate
+                 vita dicta sunt explicaboemo enim ipsam voluptatem</p>
+            </div>
+            <div class="border border-[#DADADA] p-4">
+              <input type="checkbox" id="challenge" hidden>
+              <label for="challenge" class="flex items-center gap-3">
+                <div class="text-2xl font-bold"><i class='bx bx-plus'></i></div>                <span class="font-bold text-black cursor-pointer capitalize">
+                  challenging inline workshops meetup ?</span>
+              </label>
+              <p class="pl-10 pt-2 opacity-60 hidden ">Sed perspiciais unde omnis iste natus error voluptat accusantium dolore
+                 lautium totam rem aperiam eaque abillo inventore veritatis et quasi architeo beate
+                 vita dicta sunt explicaboemo enim ipsam voluptatem</p>
+            </div>
+            <div class="border border-[#DADADA] p-4">
+              <input type="checkbox" id="access" hidden>
+              <label for="access" class="flex items-center gap-3">
+                <div class="text-2xl font-bold"><i class='bx bx-plus'></i></div>                <span class="font-bold text-black cursor-pointer capitalize">
+                  accessible images for when matter most ?</span>
+              </label>
+              <p class="pl-10 pt-2 opacity-60 hidden ">Sed perspiciais unde omnis iste natus error voluptat accusantium dolore
+                 lautium totam rem aperiam eaque abillo inventore veritatis et quasi architeo beate
+                 vita dicta sunt explicaboemo enim ipsam voluptatem</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section class="mt-4 bg-[#F8F4EF] w-full h-auto">
+      <div class="text-center pt-36">
+        <div class="flex items-center justify-center gap-4 font-[Hind] font-bold ">
+          <div class="bg-[#FC8459] w-[7%] lg:w-[4%]  h-1 rounded"></div>
+          <div class="text-[#FC8459] text-2xl">Latest Project</div>
+          <div class="bg-[#FC8459] w-[7%] lg:w-[4%]  h-1 rounded"></div>
+        </div>
+        <div>
+          <h1
+            class="text-[#2C3941] font-[Rubik - 500] lg:text-[3rem] text-[2rem] font-bold lg:w-[700px] lg:m-auto "
+          >
+          Explore Our Professional
+          Interior Projects
+          </h1>
+        </div>
+      </div>
+      <div class="w-full px-8 py-20 flex flex-wrap gap-4">
+        <div class="image relative w-full h-auto lg:w-[48%] overflow-hidden">
+          <a href=""> 
+            <img class=" w-full " src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/portfolio-1-1.jpg" alt="">
+          </a>
+          <div class="service bg-[#396864] absolute bottom-0 left-0  right-0 w-full h-0 overflow-hidden opacity-90 transition-all duration-500">
+            <div class="w-full flex flex-col justify-center items-center leading-10
+               absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+              <div class="bg-[#FAD105] inline-block p-4 text-2xl font-bold
+                  a"><i class='bx bx-plus'></i>
+              </div>
+              <div class="text-white text-2xl font-bold pt-3">
+                <h3>Painting Outside in house</h3>
+              </div>
+              <div>
+                <p class="text-white text-md ">color painting services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image relative w-full lg:w-[48%] overflow-hidden">
+          <a href=""> 
+            <img class=" w-full h-auto " src="	https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/portfolio-2-2.jpg" alt="">
+          </a>
+          <div class="service bg-[#396864] absolute bottom-0 left-0  right-0 w-full h-0 overflow-hidden opacity-90 transition-all duration-500">
+            <div class="w-full flex flex-col justify-center items-center leading-10
+               absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+              <div class="bg-[#FAD105] inline-block p-4 text-2xl font-bold
+                  a"><i class='bx bx-plus'></i>
+              </div>
+              <div class="text-white text-2xl font-bold pt-3">
+                <h3>Painting Outside in house</h3>
+              </div>
+              <div>
+                <p class="text-white text-md ">color painting services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image relative w-full lg:w-[48%] overflow-hidden">
+          <a href=""> 
+            <img class=" w-full h-auto " src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/portfolio-3-1.jpg" alt="">
+          </a>
+          <div class="service bg-[#396864] absolute bottom-0 left-0  right-0 w-full h-0 overflow-hidden opacity-90 transition-all duration-500">
+            <div class="w-full flex flex-col justify-center items-center leading-10
+               absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+              <div class="bg-[#FAD105] inline-block p-4 text-2xl font-bold
+                  a"><i class='bx bx-plus'></i>
+              </div>
+              <div class="text-white text-2xl font-bold pt-3">
+                <h3>Painting Outside in house</h3>
+              </div>
+              <div>
+                <p class="text-white text-md ">color painting services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="image relative w-full lg:w-[48%] overflow-hidden">
+          <a href=""> 
+            <img class=" w-full h-auto " src="	https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/12/portfolio-4-1.jpg" alt="">
+          </a>
+          <div class="service bg-[#396864] absolute bottom-0 left-0  right-0 w-full h-0 overflow-hidden opacity-90 transition-all duration-500">
+            <div class="w-full flex flex-col justify-center items-center leading-10
+               absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
+              <div class="bg-[#FAD105] inline-block p-4 text-2xl font-bold
+                  a"><i class='bx bx-plus'></i>
+              </div>
+              <div class="text-white text-2xl font-bold pt-3">
+                <h3>Painting Outside in house</h3>
+              </div>
+              <div>
+                <p class="text-white text-md ">color painting services</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <footer class="bg-[#2C3941] w-full h-auto px-4">
+      <div class="flex flex-wrap  py-20 gap-4 justify-center">
+        <div class="w-full md:w-[45%] lg:w-[25%] flex flex-col">
+          <div><h2 class="text-white text-3xl font-bold">Quick Links</h2></div>
+          <div class="opacity-50 py-7 md:w-[80%]"><hr></div>
+          <ul class="text-[#a7c1d1]  ">
+            <li><a href="" class="hover:text-white transition-all duration-300">Residential Interior</a></li>
+            <li><a href="" class="hover:text-white transition-all duration-300">Commercial Interior</a></li>
+            <li><a href="" class="hover:text-white transition-all duration-300">Industrial Interior</a></li>
+            <li><a href="" class="hover:text-white transition-all duration-300">Roof Servicing</a></li>
+            <li><a href="" class="hover:text-white transition-all duration-300">Color Mixing</a></li>
+            <li><a href="" class="hover:text-white transition-all duration-300">Painting & Decoration</a></li>
+
+          </ul>
+
+        </div>
+        <div class="w-full md:w-[45%] lg:w-[20%] flex flex-col">
+          <div><h2 class="text-white text-3xl font-bold">Contact Us</h2></div>
+          <div class="opacity-50 py-7 md:w-[80%]"><hr></div>
+          <ul class="text-[#a7c1d1] space-y-4">
+            <li>
+              <div class="flex  gap-4">
+                <div class="text-[#FC8459] text-xl mt-[0.30rem]"><i class="fi fi-rs-marker"></i></div>
+                <div >
+                  <h4 class="text-white text-xl font-[Rubik - 500] font-[600]">Locations</h4>
+                  <a href="" class="hover:text-white transition-all duration-300">30 Main Street, New York</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex  gap-4">
+                <div class="text-[#FC8459] text-xl mt-[0.30rem]"><i class="fi fi-rr-envelope-open"></i></div>
+                <div >
+                  <h4 class="text-white text-xl font-[Rubik - 500] font-[600]">Email Us</h4>
+                  <a href="" class="hover:text-white transition-all duration-300">support@gmail.com</a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex  gap-4">
+                <div class="text-[#FC8459] text-xl mt-[0.30rem]"><i class="fi fi-rr-phone-flip"></i></div>
+                <div >
+                  <h4 class="text-white text-xl font-[Rubik - 500] font-[600]">Phone Us</h4>
+                  <a href="" class="hover:text-white transition-all duration-300">+012 (344) 678 99</a>
+                </div>
+              </div>
+            </li>
+
+
+          </ul>
+
+        </div>
+        <div class="w-full md:w-[45%] lg:w-[25%] flex flex-col">
+          <div><h2 class="text-white text-3xl font-bold">Recent News</h2></div>
+          <div class="opacity-50 py-7 md:w-[80%]"><hr></div>
+          <ul class="text-[#a7c1d1] space-y-6">
+            <li>
+              <div class="flex  gap-4">
+                <div class="text-[#FC8459] text-xl mt-[0.30rem]">
+                  <img class="w-16 h-16" src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/11/blog-big-1-1-150x150.jpg" alt="">
+                </div>
+                <div >
+                  <h4 class="text-white text-xl font-[Rubik - 500] font-[600]">How to Clean Your Home Faster</h4>
+                  <span href="" class="flex items-center gap-2">
+                    <span class="text-[#FAD105] text-[13px]"><i class="fi fi-rs-calendar"></i></span>
+                    <span class="font-[500]">NOVEMBER 29, 2021</span> 
+                    
+                  </span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="flex  gap-4">
+                <div class="text-[#FC8459] text-xl mt-[0.30rem]">
+                  <img class="w-16 h-16" src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/11/blog-big-5-150x150.jpg" alt="">
+                </div>
+                <div >
+                  <h4 class="text-white text-xl font-[Rubik - 500] font-[600]">Four Ways a Clean Workplace Makes</h4>
+                  <span href="" class="flex items-center gap-2">
+                    <span class="text-[#FAD105] text-[13px]"><i class="fi fi-rs-calendar"></i></span>
+                    <span class="font-[500]">NOVEMBER 29, 2021</span> 
+                    
+                  </span>
+                </div>
+              </div>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+        <div class="w-full md:w-[45%] lg:w-[20%] flex flex-col">
+          <div><h2 class="text-white text-3xl font-bold">Newsletter</h2></div>
+          <div class="opacity-50 py-7 md:w-[80%]"><hr></div>
+          <ul class="text-[#a7c1d1]  ">
+            <li>
+              <p class=" ">Sed ut perspiciati unde omnis iste natus error sit voluptatem accusantium</p>
+            </li>
+            <li class="mt-6">
+              <input class="w-full py-3 pl-6 bg-[#374853] focus:outline-none text-white placeholder:text-[#a7c1d1]" type="email" placeholder="Enter Your Email">
+            </li>
+            <li class="mt-3">
+              <button class="flex  justify-center gap-2 bg-[#FC8459] w-44 py-3 text-[#222328] font-bold">
+                <SPAN>SUBSCRIBE</SPAN>
+                <span class="text-xl"><i class="fi fi-rr-arrow-small-right"></i></span>
+              </button>
+            </li>
+
+
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="opacity-50 py-7 md:w-[full]"><hr></div>
+
+      <div class="pb-8 flex flex-col md:flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+        <div class="media flex items-center gap-2">
+          <div class="bg-[#374853] w-10 h-10 flex items-center justify-center text-[#A3BFD1] rounded-md hover:bg-[#FC8459] hover:text-[#222328] transition-all duration-300"><i class='bx bxl-facebook'></i></div>
+          <div class="bg-[#374853] w-10 h-10 flex items-center justify-center text-[#A3BFD1] rounded-md hover:bg-[#FC8459] hover:text-[#222328] transition-all duration-300"><i class='bx bxl-twitter'></i></div>
+          <div class="bg-[#374853] w-10 h-10 flex items-center justify-center text-[#A3BFD1] rounded-md hover:bg-[#FC8459] hover:text-[#222328] transition-all duration-300"><i class='bx bxl-instagram'></i></div>
+          <div class="bg-[#374853] w-10 h-10 flex items-center justify-center text-[#A3BFD1] rounded-md hover:bg-[#FC8459] hover:text-[#222328] transition-all duration-300"><i class='bx bxl-linkedin-square'></i></div>
+          <div class="bg-[#374853] w-10 h-10 flex items-center justify-center text-[#A3BFD1] rounded-md hover:bg-[#FC8459] hover:text-[#222328] transition-all duration-300"><i class='bx bxl-youtube'></i></div>
+        </div>
+        <div class="flex flex-col  gap-8 lg:flex-row lg:items-center">
+          <div class="text-[#A3BFD1]"><p>Copyright © 2023 Theme_Pure. All Rights Reserved</p></div>
+          <div><img src="https://codeskdhaka.com/wp/roxce/wp-content/uploads/2021/11/logo-white.png" alt=""></div>
+        </div>
+
+      </div>
+
+
+    </footer>
+
+  </body>
+</html>
